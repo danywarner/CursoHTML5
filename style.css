@@ -32,3 +32,11 @@ li{
 	background-color: #CDA1E3;
 	display: inline;
 }
+li:nth-child(2){
+	background-color: red;
+}
+
+
+p[name="atributo"]{
+	color:green;
+}
