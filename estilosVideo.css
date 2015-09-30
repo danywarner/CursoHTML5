@@ -1,0 +1,35 @@
+.video{
+	width:720px;
+	margin: 20px auto;
+	background: #9B9FD4 ;
+	padding: 5px;
+	border: 5px solid: ; #707AFF;
+	border-radius: 10px;
+}
+
+nav{
+	margin:5px 0;
+}
+
+.botonera{
+	float:left;
+	width:100px;
+	height:20px
+}
+
+#barra{
+	background: #FFF;
+	width: 600px;
+	height:16px;
+	border:1px solid #666;
+	margin-left: 60px;
+	padding: 3px;
+	margin-left: 80px;
+}
+
+#progreso{
+	position: absolute;
+	width:0px;
+	height: 16px;
+	background: rgba(255,0,150,2);
+}
