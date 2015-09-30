@@ -1,9 +1,43 @@
 body{
 	background-color: #EFF0FB;
+	font: Verdana, sans-serif;
 }
 
 .web-header{
-	background-color: #9096E0;
+	/*background-color: #9096E0;*/
+	width: 500px;
+	text-align: center;
+	margin: 15px auto;
+	padding: 7px;
+	/*border: 3px solid #9038BC;*/
+	border-radius: 10px 10px 10px 40px;
+	box-shadow: #999 5px 5px 8px;
+	background: -moz-linear-gradient(top,#9B9FD4,#707AFF);
+	background: -webkit-radial-gradient(center, ellipse,#9B9FD4,#707AFF);
+	background: -ms-linear-gradient(top,#9B9FD4,#707AFF);
+	/*outline: 2px dashed blue;
+	outline-offset: 5px;*/
+	/*-webkit-transform:scale(0.8, -1);*/	
+	-webkit-transform:rotate(360deg);
+	/*-webkit-transform:skew(-20deg);*/
+	-webkit-transition:-webkit-transform 5s ease 0.5;
+}
+
+.web-header:hover{
+	/*-webkit-transform:rotate(3deg);*/
+	
+
+}
+
+.titulo{
+	font: 3.4rem 'Mi Fuente', Verdana, sans-serif;
+	text-shadow: #999 3px 3px 10px;
+	color:rgba(0,0,0,0.9);
+}
+
+@font-face{
+	font-family: 'Mi Fuente';
+	src:url('Mathilde.ttf');
 }
 
 nav{
@@ -32,7 +66,7 @@ li{
 	background-color: #CDA1E3;
 	display: inline;
 }
-li:nth-child(2){
+li:nth-child(even){
 	background-color: red;
 }
 
