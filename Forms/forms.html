@@ -7,14 +7,24 @@
 <body>
 	<section>
 		<form name="miformulario" id="miformulario" action="GET" autocomplete="off">
-			<p>Name:<input type="text" name="texto" id="texto" ></p>
-			<p>e-mail: <input type="email" name="email" id="email"></p>
-			<p>Search: <input type="search" name="search" id="search"></p>
+			<p>Name:<input type="text" name="texto" id="texto" required="true" ></p>
+			<p>e-mail: <input type="email" name="email" id="email" multiple ></p>
+			<p>Search: <input type="search" name="search" id="search" ></p>
 			<p>url: <input type="url" name="url" id="url"></p>
 			<p>Tel: <input type="tel" name="tel" id="tel"></p>
-			<p>Edad: <input type="number" name="number" id="number" min="1" max="100"></p>
+			<p>Edad: <input type="number" name="number" id="number" min="0" max="100" step="5" placeholder="múltiplos de 5"></p>
+			<p>Range: <input type="range" name="range" id="range" min="0" max="2000" step="100"></p>
+			<p>Date: <input type="date" name="date" id="date" autofocus></p>
+			<p>Month: <input type="month" name="month" id="month"></p>
+			<p>Week: <input type="week" name="week" id="week"></p>
+			<p>Time: <input type="time" name="time" id="time"></p>
+			<p>Zip Code:<input pattern="[0-9]{5}" placeholder="five digits" name="zip code" id="zip code"></p>
 			<input type="submit" value="enviar">
 		</form>
 	</section>
+
+	<img src="../imagenes/1.jpg" height="200" width="200" alt=""/>
+	<p>Apellido: <input type="text" name="apellido"form="miformulario"></p>
+
 </body>
 </html>
