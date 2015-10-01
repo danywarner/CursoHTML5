@@ -1,0 +1,54 @@
+/*SELECTOR UNIVERSAL
+* {
+
+	color:red;
+}*/
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color:maroon;
+}
+
+.background-pink{
+	background-color:pink; 
+}
+
+/*
+#selectorID{}
+*/
+
+.article-header{
+	font-family: Arial, Helvetica, sans-serif;
+	color:green;
+}
+
+li[data-RobotOwner="Koji Kabuto"]{
+	background-color: olive;
+	color:white;
+}
+li[data-RobotOwner="Sayaka Yumi"]{
+	background-color: brown;
+	color:white;
+}
+
+input[type="email"]:valid{
+	background-color: peru;
+}
+
+input[type="email"]:focus:invalid{
+	background-color: red;
+}
+
+.toggle:checked + .checked{
+	background-color: olive;
+}
+
+.checked{
+	width:100px;
+	height: 100px;
+	background-color: peru;
+}
+
+
+
+
