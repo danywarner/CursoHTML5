@@ -3,15 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Forms 2</title>
-	<script src="formsJS.js"></script>
+	<!--<script src="formsJS.js"></script>-->
 	<link rel="stylesheet" href="FormStyle.css">
-</head>
 
+</head>
+	<script>
+		
+
+function run(){
+	var name=document.getElementById("name");
+	var lname=document.getElementById("lname");
+	name.addEventListener("input",validate, false);
+	lname.addEventListener("input",validate, false);
+	validate(name,lname);
+} 
+function validate(name,lname){
+	
+	if(name.value=="" && lname.value==""){
+		name.setCustomValidity("Input either a name or last name");
+		name.style.background="#FFDDDD";
+		lname.style.background="#FFDDDD";
+	}
+
+	else{
+		name.setCustomValidity("");
+		name.style.background="#FFFFFF";
+		lname.style.background="#FFFFFF";
+		
+	}
+}
+
+
+window.addEventListener("load", run, false);
+
+	</script>
 <body>
 	<section>
 		<form name="register_user" action="get">
 		<table>
-			<tr><td>Name: </td><td><input type="text" name="name" class="name" value="kkk"></td></tr>
+			<tr><td>Name: </td><td><input type="text" name="name" id="name"></td></tr>
 			<tr><td>Last Name: </td><td><input type="text" name="lname" id="lname" value=""></td></tr>
 			<tr><td>Age: </td><td><input type="number" name="age" id="age" min="1" max="100"></td></tr>
 			<tr><td><input type="submit" value="send" id="send"></td></tr>

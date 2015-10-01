@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms 3</title>
+	<script src="forms3.js"></script>
+	<link rel="stylesheet" href="FormStyle.css">
+</head>
+
+<body>
+	<section>
+		<form name="data_user" action="get">
+		<table>
+			<tr><td>User: </td><td><input pattern="[A-Za-z]{3}" name="user" id="user" maxlength="10" required></td></tr>
+			<tr><td>E-mail: </td><td><input type="email" name="email" id="email" required></td></tr>
+			<tr><td>Age: </td><td><input type="range" name="age" id="age" min="0" max="120" value="30" step="30"></td></tr>
+			<tr><td><output id="rango">0 to 30</output>
+			<tr><td><input type="submit" value="send" id="send"></td></tr>
+		</table>
+		</form>
+	</section>
+</body>
+</html>
