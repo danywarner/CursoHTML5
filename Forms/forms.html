@@ -19,11 +19,16 @@
 			<p>Week: <input type="week" name="week" id="week"></p>
 			<p>Time: <input type="time" name="time" id="time"></p>
 			<p>Zip Code:<input pattern="[0-9]{5}" placeholder="five digits" name="zip code" id="zip code"></p>
+			<datalist id="info">
+				<option value="555553404" label="Telefono 1"></option>
+				<option value="2225223404" label="Telefono 2"></option>
+				<option value="6666634043" label="Telefono 3"></option>
+			</datalist>
+			<p>Cel: <input type="tel" name="tel" id="tel" list="info"></p>
 			<input type="submit" value="enviar">
 		</form>
 	</section>
 
-	<img src="../imagenes/1.jpg" height="200" width="200" alt=""/>
 	<p>Apellido: <input type="text" name="apellido"form="miformulario"></p>
 
 </body>
