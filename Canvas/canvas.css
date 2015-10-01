@@ -1,9 +1,10 @@
-#canvas{
+#canvas, #canvas2,#canvas3{
 	background-color: #EFF0FB;
 }
 
 section{
 	width:500px;
 	position:relative;
-	margin: auto;
+	margin: 50px;
+	display: inline;
 }
